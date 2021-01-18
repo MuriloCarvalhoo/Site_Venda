@@ -1,0 +1,774 @@
+*{
+	font-family: 'Oswald';
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.clear{
+	clear: both;
+}
+
+html,body{
+	height: 100%;
+}
+
+
+.container{
+	max-width: 1400px;
+	padding: 20px 2%;
+	margin: 0 auto;
+}
+
+header.container img{
+	float: left;
+}
+
+header .line-header{
+	position: relative;
+	width: 100%;
+	height: 3px;
+	top: 20px;
+	background: red;
+	text-align: center;
+
+}
+
+.menu-desktop{
+	float: right;
+}
+
+.menu-desktop p{
+	float: left;
+	font-size: 23px;
+	padding: 30px 10px;
+}
+
+.menu-desktop a{
+	text-decoration: none;
+	color: black;
+}
+
+.mobile{
+	display: none;
+}
+
+
+section.Banner {
+	overflow: hidden;
+	width: 100%;
+	max-height: 650px;
+	background-image: url('../imagens/opala.png');
+	background-position: right bottom;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: black;
+}
+
+
+
+.texto-banner{
+	float: left;
+	padding: 100px 100px;
+}
+
+.texto-banner-single{
+	width: 314px;
+	height: 80px;
+	text-align: center;
+	background-image: url('../imagens/box-text.png');
+	background-repeat: no-repeat;
+	margin-top: 20px;
+	text-transform: uppercase;
+	background-size: 100% 100%;
+}
+
+.texto-banner-single:nth-of-type(2){
+	width: 221px;
+}
+
+.texto-banner-single:nth-of-type(3){
+	width: 190px;
+}
+
+
+.texto-banner-single h2{
+	color: white;
+	font-size: 36px;
+	line-height: 2.2;
+}
+
+section.destaque{
+	padding: 90px 2%;
+}
+
+section.destaque .destaque2{
+	position: relative;
+	text-align: center;
+	margin: 0 auto;
+	max-width: 1400px;
+}
+
+section.destaque .destaque2 .line-destaque {
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	top: 20px;
+	background: black;
+	text-align: center;
+
+}
+
+section.destaque .destaque2 h2{
+	font-size: 27px;
+	padding: 0 20px;
+	position: relative;
+	display: inline-block;
+	font-style: italic;
+	text-transform: uppercase;
+	text-align: center;
+	background: white;
+
+
+}
+
+.galeria .galeria-single {
+	float: left;
+	width: 33.3%
+}
+
+.galeria .galeria-single img{
+	width: 280px;
+	height: 215px;
+	border: 5px solid white;
+}
+
+.galeria .galeria-single .galeria-texto{
+	padding-top: 15px;
+	padding-bottom: 10px;
+
+}
+
+.galeria .galeria-single span{
+	font-size: 18px;
+}
+
+.galeria .galeria-single p{
+	font-size: 15px;
+	color: #353535;
+	padding: 5px 0;
+}
+
+.galeria .galeria-single input{
+	text-decoration: none;
+	color: white;
+	background-color: #EB2D2D;
+	border: none;
+	width: 153px;
+	height: 49px;
+	cursor: pointer;
+	padding: 5px 0;
+}
+
+section.services-depoi .servicos{
+	width: 50%;
+	height: 400px;
+	background-color: #242424;
+	color: white;
+	padding-left: 2%;
+	padding-top: 2%;
+	float: left;
+}
+
+section.services-depoi .servicos .servicos-2{
+	float: left;
+	padding: 0 5%;
+	display: inline-block;
+}
+section.services-depoi .servicos .servicos-3{
+	float: right;
+	padding: 10px 20px;
+}
+
+section.services-depoi .servicos h2{
+	font-size: 35px;
+	text-transform: uppercase;
+	padding: 10px 0;
+}
+
+section.services-depoi .servicos nav li{
+	font-size: 24px;
+}
+
+
+section.services-depoi .servicos input{
+	text-decoration: none;
+	color: white;
+	background-color: #EB2D2D;
+	border: none;
+	width: 153px;
+	height: 49px;
+	cursor: pointer;
+}
+
+section.services-depoi .depoi{
+	width: 50%;
+	height: 400px;
+	background-color: #EB2D2D;
+	color: white;
+	padding-left: 2%;
+	padding-top: 2%;
+	float: left;
+}
+
+section.services-depoi .depoi .depoi-2{
+	float: left;
+	padding: 0 5%;
+}
+
+section.services-depoi .depoi .depoi-3{
+	padding-top: 24%;
+}
+
+section.services-depoi .depoi h2{
+	font-size: 35px;
+	text-transform: uppercase;
+	padding: 10px 0;
+}
+
+section.services-depoi .depoi p{
+	font-size: 24px;
+}
+
+section.services-depoi .depoi-3{
+	padding: 0 5%;
+}
+section.services-depoi .depoi-3 img{
+	padding-top: 10px;
+}
+
+section.services-depoi .depoi-3 img:nth-of-type(2){
+	padding-left: 40px;
+}
+
+section.services-depoi .depoi-3 p{
+	float: right;
+	color: black;
+	font-size: 24px;
+	padding-top: 10px;
+}
+
+section.contato{
+	padding: 90px 2%;
+}
+
+section.contato .contato2{
+	position: relative;
+	text-align: center;
+	margin: 0 auto;
+}
+
+section.contato h2{
+	font-size: 27px;
+	padding: 0 20px;
+	position: relative;
+	display: inline-block;
+	font-style: italic;
+	text-transform: uppercase;
+	text-align: center;
+	background: white;	
+}
+
+section.contato .contato2 .line-contato {
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	top: 20px;
+	background: black;
+	text-align: center;
+}
+
+
+
+
+section.contato form{
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 20px 0;	
+}
+
+section.contato form input{
+	width: 100%;
+	height: 40px;
+	padding: 10px 10px;
+}
+
+section.contato .contato-2 {
+	width: 50%;
+	float: left;
+	padding: 20px 0;
+}
+
+section.contato .w100{
+	padding-left: 5px;
+}
+
+section.contato textarea{
+	width: 500px;
+	height: 100px;
+	padding: 10px 10px;
+}
+
+section.contato input[type=submit]{
+	text-decoration: none;
+	color: white;
+	background-color: #EB2D2D;
+	border: none;
+	width: 80px;
+	height: 45px;
+	cursor: pointer;
+	padding: 5px 0;
+	font-size: 15px;
+	line-height: 2;
+}
+
+footer{
+	padding: 20px 2%;
+	background-color: #252525;
+	line-height: 3;
+
+}
+
+.menu-inferior{
+	float: left;
+}
+
+footer p{
+	float: right;
+	font-size: 18px;
+	font-style: bold;
+	padding: 0 10px;
+	color: white;
+}
+
+.menu-inferior a{
+	text-decoration: none;
+	color: white;
+}
+
+.menu-inferior a:hover{
+  color: #EB2D2D;
+
+}
+
+section.eventos {
+	height: 90%;
+}
+
+section.venda{
+	padding: 90px 2%;
+}
+
+section.venda .venda-text{
+	position: relative;
+	text-align: center;
+}
+
+section.venda .line-text{
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	top: 20px;
+	background: black;
+	text-align: center;
+}
+
+section.venda .venda-text h2{
+	font-size: 27px;
+	padding: 0 20px;
+	position: relative;
+	display: inline-block;
+	font-style: italic;
+	text-transform: uppercase;
+	text-align: center;
+	background: white;	
+}
+
+section.venda .galeriavenda .side-bar{
+	width: 300px;
+	float: left;
+	padding: 30px 2%;
+	height: 100%;
+	display: inline-block;
+}
+
+section.venda .galeriavenda .side-bar .side-bar1{
+	float: left;
+	width: 100%
+}
+
+section.venda .galeriavenda .side-bar .side-bar2{
+	float: left;
+	width: 100%;
+}
+
+.side-bar .side-bar2 form .procura-ano{
+	padding: 5px 2%;
+}
+
+.side-bar .side-bar2 form span{
+	font-size: 18px;
+	padding: 10px 2%;
+	font-weight: bold;
+}
+
+.side-bar .side-bar2 form input[type=checkbox] {
+	display: none;
+}
+
+.side-bar .side-bar2 form label{
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	display: inline-block;
+}
+
+
+
+section.venda .galeriavenda .side-bar h2{
+	font-size: 24px;
+	padding: 10px 2%;
+}
+
+section.venda .galeriavenda .side-bar .filtro{
+	width: 100%;
+	height: 20px;
+	border: 2px solid rgb(180,180,180);
+	border-radius: 8px;
+	position: relative;
+}
+
+section.venda .galeriavenda .side-bar .filtro .filtro2{
+	width: 30%;
+	background: rgb(230,230,230);
+	height: 17px;
+	border-radius: 5px;
+	position: absolute;
+	z-index: -1;
+}
+
+section.venda .galeriavenda .side-bar .filtro .filtro3{
+	width: 20px;
+	height: 22px;
+	border-radius: 5px;
+	position: relative;
+	margin-left: 25%;
+	background: rgba(210,210,210,1.6);
+	top: -3px;
+	border: 2px solid rgb( 200,200,200);
+	display: inline-block;
+}
+
+section.venda .galeriavenda .side-bar p{
+	float: left;
+	font-size: 18px;
+	padding: 10px 2%;
+	font-weight: bold;
+}
+
+section.venda .galeriavenda .side-bar p:nth-of-type(2){
+	float: right;
+
+}
+
+section.venda .galeriavenda .galeria-venda{
+	padding: 30px 2%;
+}
+
+section.venda .galeriavenda .galeria-venda .galeria-single{
+	float: left;
+	widows: 30%;
+}
+
+
+section.venda .galeriavenda .galeria-venda .galeria-single img{
+	width: 280px;
+	height: 215px;
+	border: 5px solid white;
+}
+
+section.venda .galeriavenda .galeria-venda .galeria-single .galeria-texto{
+	padding-top: 15px;
+	padding-bottom: 10px;
+
+}
+
+section.venda .galeriavenda .galeria-venda .galeria-single span{
+	font-size: 18px;
+}
+
+section.venda .galeriavenda .galeria-venda .galeria-single p{
+	font-size: 15px;
+	color: #353535;
+	padding: 5px 0;
+}
+
+section.venda .galeriavenda .galeria-venda .galeria-single input{
+	text-decoration: none;
+	color: white;
+	background-color: #EB2D2D;
+	border: none;
+	width: 153px;
+	height: 49px;
+	cursor: pointer;
+	padding: 5px 0;
+}
+
+section.sobrenos{
+	padding: 90px 2%;
+}
+
+section.sobrenos .sobrenos-destaque{
+	position: relative;
+	text-align: center;
+}
+
+section.sobrenos .sobrenos-destaque .line-sobrenos{
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background: black;
+	text-align: center;
+	top: 20px;
+}
+
+section.sobrenos .sobrenos-destaque h2{
+	font-size: 27px;
+	padding: 0 20px;
+	position: relative;
+	font-style: italic;
+	text-transform: uppercase;
+	text-align: center;
+	background: white;
+	display: inline-block;
+}
+
+section.sobrenos .container .sobre-oficina{
+	text-align: center;
+	padding: 90px 2%;
+	margin: 0 auto;
+}
+
+section.sobrenos .container .sobre-oficina img{
+	max-width: 800px;
+	max-height: 400px;
+	width: 100%;
+	height: 100%;
+}
+
+section.sobrenos .container .sobre-oficina h2{
+	font-size: 27px;
+	padding: 0 20px;
+	font-style: italic;
+	text-transform: uppercase;
+	background: white;
+	padding: 10px 2%;
+}
+
+section.sobrenos .container .sobre-oficina p{
+	max-width: 800px;
+	max-height: 400px;
+	text-align: left;
+	padding: 10px 2%;
+	margin: 0 auto;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+section.sobrenos .container .sobre-autor{
+	max-width: 800px;
+	max-height: 400px;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+section.sobrenos .container .sobre-autor img{
+	width: 100%;
+	height: 100%;
+	max-width: 200px;
+	max-height: 200px;
+	float: left;
+	padding: 0 2%;
+}
+
+section.sobrenos .container .sobre-autor p{
+	text-align: left;
+	padding: 0 2%;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+section.eventos{
+	padding: 90px 2%;
+	height: auto;
+}
+
+section.eventos .eventos-destaque{
+	position: relative;
+	text-align: center;
+}
+
+section.eventos .eventos-destaque .line-eventos{
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background: black;
+	text-align: center;
+	top: 20px;
+}
+
+section.eventos .eventos-destaque h2{
+	font-size: 27px;
+	padding: 0 20px;
+	position: relative;
+	font-style: italic;
+	text-align: center;
+	background: white;
+	text-transform: uppercase;
+	display: inline-block;
+}
+
+section.eventos .evento1 {
+	text-align: center;
+	margin: 0 auto;
+	padding: 30px 2%;
+	width: 100%;
+	max-width: 800px;
+s}
+
+section.eventos .evento1 img{
+	width: 100%;
+	height: 100%;
+	max-width: 800px;
+	max-height: 400px;
+	padding: 10px 2%;
+}
+
+section.eventos .evento1 h2{
+	font-size: 27px;
+	padding: 10px 20px;
+	font-style: italic;
+	text-align: left;
+}
+
+section.eventos .evento1 p{
+	text-align: left;
+	padding: 10px 2%;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+	@media screen and (max-width: 900px) {
+		section.Banner {
+			background-size: cover;
+		}
+
+
+		.menu-inferior{
+			float: none;
+			text-align: center;
+		}
+
+		footer p{
+		font-size: 12px;
+		}
+
+	}
+
+
+	@media screen and (max-width: 667px) {
+		.menu-desktop{
+			display: none;
+		}
+
+		.mobile{
+			display: block;
+			float: right;
+			cursor: pointer;
+		}
+
+		.mobile2{
+			display: none;
+		}
+
+		.texto-banner-single:nth-of-type(1){
+
+			width: 170px;
+		}
+
+		.texto-banner-single:nth-of-type(2){
+			width: 150px;
+		}
+
+		.texto-banner-single:nth-of-type(3){
+			width: 130px;
+		}
+
+
+		.texto-banner-single h2{
+			color: white;
+			font-size: 24px;
+			line-height: 3;
+		}
+
+		.galeria .galeria-single{
+			text-align: center;
+		}
+
+		.galeria .galeria-single img{
+			width: 200px;
+			height: 150px;
+			border: 5px solid white;
+			text-align: center;
+		}
+
+		.galeria .galeria-single input{
+			width: 100px;
+			height: 49px;
+		}
+
+		.menu-inferior{
+			display: none;
+		}
+
+		section.services-depoi .servicos h2{
+			font-size: 24px;
+
+		}
+
+		section.services-depoi .servicos nav li{
+			font-size: 18px;
+		}
+
+		section.services-depoi .servicos input{
+			width: 100px;
+			height: 49px;
+		}
+
+		section.services-depoi .depoi h2{
+			font-size: 24px;
+
+		}
+
+		section.services-depoi .depoi p{
+			font-size: 18px;
+		}
+
+		section.contato textarea{
+			width: 100%;
+		}
+
+	}
