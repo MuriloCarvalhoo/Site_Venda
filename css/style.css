@@ -442,7 +442,7 @@ section.venda .galeriavenda .side-bar h2{
 	padding: 10px 2%;
 }
 
-section.venda .galeriavenda .side-bar .filtro{
+section.venda .galeriavenda .side-bar .barra-preco{
 	width: 100%;
 	height: 20px;
 	border: 2px solid rgb(180,180,180);
@@ -450,8 +450,8 @@ section.venda .galeriavenda .side-bar .filtro{
 	position: relative;
 }
 
-section.venda .galeriavenda .side-bar .filtro .filtro2{
-	width: 30%;
+section.venda .galeriavenda .side-bar .barra-preco .barra-preco-fill{
+	width: 0;
 	background: rgb(230,230,230);
 	height: 17px;
 	border-radius: 5px;
@@ -459,14 +459,15 @@ section.venda .galeriavenda .side-bar .filtro .filtro2{
 	z-index: -1;
 }
 
-section.venda .galeriavenda .side-bar .filtro .filtro3{
+section.venda .galeriavenda .side-bar .barra-preco .pointer-barra{
 	width: 20px;
 	height: 22px;
 	border-radius: 5px;
 	position: relative;
-	margin-left: 25%;
+	margin-left: 0;
 	background: rgba(210,210,210,1.6);
 	top: -3px;
+	left: -10px;
 	border: 2px solid rgb( 200,200,200);
 	display: inline-block;
 }
