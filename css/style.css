@@ -20,6 +20,7 @@ html,body{
 	margin: 0 auto;
 }
 
+/* PAGINA PRINCIPAL*/
 header.container img{
 	float: left;
 }
@@ -34,7 +35,7 @@ header .line-header{
 
 }
 
-.menu-desktop{
+nav{
 	float: right;
 }
 
@@ -50,9 +51,41 @@ header .line-header{
 }
 
 .mobile{
+	background-image: url('../imagens/icon_menu.png');
+	cursor: pointer;
+	width: 32px;
+	height: 32px;
+	background-size: 100% 100%;
+	float: right;
 	display: none;
+
 }
 
+.mobile ul {
+	display: none;
+	background-color: #EB2D2D;
+	position: absolute;
+	left: 85%;
+	top: 60px;
+
+}
+
+.mobile ul p {
+	padding: 10px 15px;
+	transition: 0.4s;
+	border-bottom: 1px solid white ;
+	text-align: -webkit-match-parent;
+	text-align: center;
+
+}
+
+.mobile ul p a{
+	cursor: pointer;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+
+}
 
 section.Banner {
 	overflow: hidden;
@@ -99,7 +132,7 @@ section.Banner {
 }
 
 section.destaque{
-	padding: 90px 2%;
+	padding: 20px 2%;
 }
 
 section.destaque .destaque2{
@@ -212,18 +245,28 @@ section.services-depoi .servicos input{
 }
 
 section.services-depoi .depoi{
+	float: left;
 	width: 50%;
-	height: 400px;
 	background-color: #EB2D2D;
 	color: white;
-	padding-left: 2%;
-	padding-top: 2%;
-	float: left;
+	padding: 2% 0 2% 0;
+	height: 400px;
+}
+
+.services-depoi .depoi .depoi-scroll{
+	padding-left: 30px;
+	max-width: 600px;
+	overflow: hidden;
+}
+
+.services-depoi .depoi .depoi-scroll .depois-wraper{
+	width: 100%;
 }
 
 section.services-depoi .depoi .depoi-2{
 	float: left;
-	padding: 0 5%;
+	padding: 0 30px;
+	width: 100%;
 }
 
 section.services-depoi .depoi .depoi-3{
@@ -240,26 +283,27 @@ section.services-depoi .depoi p{
 	font-size: 24px;
 }
 
-section.services-depoi .depoi-3{
-	padding: 0 5%;
-}
-section.services-depoi .depoi-3 img{
-	padding-top: 10px;
-}
-
-section.services-depoi .depoi-3 img:nth-of-type(2){
-	padding-left: 40px;
+section.services-depoi .depoi-slide-bullets{
+	width: 100%;
+	float: left;
+	padding-left: 60px;
+	padding-top: 20px;
+	margin-top: 12px;
 }
 
-section.services-depoi .depoi-3 p{
-	float: right;
-	color: black;
-	font-size: 24px;
-	padding-top: 10px;
+section.services-depoi .depoi-slide-bullets img{
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-right: 8px;
+	cursor: pointer;
+	
 }
+
+
 
 section.contato{
-	padding: 90px 2%;
+	padding: 20px 2%;
 }
 
 section.contato .contato2{
@@ -360,6 +404,9 @@ footer p{
   color: #EB2D2D;
 
 }
+
+
+/* PAGINA VENDA*/
 
 section.eventos {
 	height: 90%;
@@ -527,6 +574,9 @@ section.venda .galeriavenda .galeria-venda .galeria-single input{
 	padding: 5px 0;
 }
 
+
+/* PAGINA SOBRE NÓS*/
+
 section.sobrenos{
 	padding: 90px 2%;
 }
@@ -612,6 +662,10 @@ section.sobrenos .container .sobre-autor p{
 	font-weight: bold;
 }
 
+
+/* PAGINA EVENTOS*/
+
+
 section.eventos{
 	padding: 90px 2%;
 	height: auto;
@@ -687,6 +741,139 @@ section.eventos .evento1 p{
 		font-size: 12px;
 		}
 
+		.galeria .galeria-single img{
+		max-width: 100%;
+  		height: auto;
+		}
+
+	}
+
+	/* PAGE VEICULO TESTE */
+
+	section.venda-single{
+		padding:0 2%;
+	}
+	
+	section.venda-single .container{
+		padding:40px 0;
+		text-align: center;
+		max-width: 1280px;
+	}
+	
+	.info-veiculo{
+		display: inline-block;
+		width: 60%;
+	}
+	
+	.foto-destaque{
+		width: 100%;
+		padding-top:70%;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	
+	
+	.descricao-veiculo{
+		display: inline-block;
+		vertical-align: top;
+		padding: 60px 20px;
+		text-align: left;
+	}
+	
+	.descricao-veiculo p{
+		margin-top:25px;
+		max-width: 360px;
+	}
+	
+	.descricao-veiculo a{
+		margin-top:25px;
+	}
+
+	.nav-galeria-parent{
+		width: 100%;
+		padding: 36px;
+		position: relative;
+	}
+
+	.arrow-left-nav{
+		position: absolute;
+		left: 8px;
+		top: 50%;
+		cursor: pointer;
+		transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		background-image: url('../imagens/arrow-left.png');
+		background-size: 100% 100%;
+		width: 22px;
+		height: 22px;
+	}
+
+	.arrow-right-nav{
+		position: absolute;
+		right: 8px;
+		top: 50%;
+		cursor: pointer;
+		transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		background-image: url('../imagens/arrow-right.png');
+		background-size: 100% 100%;
+		width: 22px;
+		height: 22px;
+	}
+
+	.info-bread{
+		text-align: left;
+		padding: 20px 0;
+	}
+
+	.info-bread a{
+		text-decoration: none;
+		color: black;
+	}
+
+	.info-bread a:last-child{
+		color: red;
+	}
+
+	.info-bread span{
+		padding: 0 20px;
+	}
+	
+	.nav-galeria{
+		width: 100%;
+		overflow: hidden;
+	}
+	
+	.nav-galeria-wraper{
+	}
+
+	.mini-img-wraper{
+		float: left;
+		padding: 9px;
+	}
+	
+	.mini-img{
+		cursor: pointer;
+		float: left;
+		border:7px solid white;
+		background-position: center;
+		background-size: cover;
+		width: 100%;
+		padding-top: 100%;
+	}
+
+	.btn1{
+		text-align: center;
+		display: block;
+		line-height: 40px;
+		background-color:#EB2D2D;
+		text-decoration: none;
+		border-bottom: 5px solid #B21E1E;
+		color: white;
+		font-size: 16px;
+		font-style: italic;
+		width: 150px;
 	}
 
 
@@ -697,13 +884,7 @@ section.eventos .evento1 p{
 
 		.mobile{
 			display: block;
-			float: right;
-			cursor: pointer;
-		}
-
-		.mobile2{
-			display: none;
-		}
+		}		
 
 		.texto-banner-single:nth-of-type(1){
 
@@ -730,10 +911,12 @@ section.eventos .evento1 p{
 		}
 
 		.galeria .galeria-single img{
-			width: 200px;
-			height: 150px;
 			border: 5px solid white;
 			text-align: center;
+			max-width: 100%;
+  			height: auto;
+
+
 		}
 
 		.galeria .galeria-single input{
@@ -773,3 +956,6 @@ section.eventos .evento1 p{
 		}
 
 	}
+
+
+	

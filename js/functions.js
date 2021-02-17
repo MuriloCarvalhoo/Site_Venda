@@ -1,6 +1,6 @@
 $(function(){
 
-//Sistema de pesquisa
+//Sistema de pesquisa pagina de venda
   var barraProgresso = 0;
   var isDrag = false;
   var precoMax = 70000;
@@ -74,5 +74,127 @@ $(function(){
     $("body").css("user-select","auto");     
    }
 
+   ///////////////////////////////////////////////////////////////////////////////
+
+
+  
+
+    //MENU MOBILE todas as paginas
+    $('.mobile').click(function(){
+        $(this).find('ul').slideToggle();        
+    });
+
+
+    //MEXER SLIDE VEICULO TESTE
+    var imgShow = 3;
+    var minIndex = imgShow -1;
+    var maIndex = Math.ceil($('.mini-img-wraper').length/3) -1;
+    var curIndex = 0;
+
+    initSlider();
+    navigateSlider();
+    clickSlider();
+
+    function initSlider() {
+        var amt = $('.mini-img-wraper').length * 33.3;
+        var elScroll = $('.nav-galeria-wraper');
+        var elSingle = $('.mini-img-wraper');
+        elScroll.css('width',amt+'%');
+        elSingle.css('width',33.3*(100/amt)+'%');
+    }
+
+    function navigateSlider(){
+        $('.arrow-right-nav').click(function(){
+            if(curIndex < maIndex){
+                curIndex++;
+                var elOff = $('.mini-img-wraper').eq(curIndex*3).offset().left - $('.nav-galeria-wraper').offset().left;
+                $('.nav-galeria').animate({'scrollLeft':elOff+'px'});
+            }
+        });
+
+        $('.arrow-left-nav').click(function(){
+            if(curIndex > 0){
+                curIndex--;
+                var elOff = $('.mini-img-wraper').eq(curIndex*3).offset().left - $('.nav-galeria-wraper').offset().left;
+                $('.nav-galeria').animate({'scrollLeft':elOff+'px'});
+            }
+        });
+    }
+
+    function clickSlider(){
+        $('.mini-img-wraper').click(function(){
+            $('.mini-img-wraper').css('background-color','transparent');
+            $(this).css('background-color','rgb(204, 204, 204)');
+            var img = $(this).children().css('background-image');
+            $('.foto-destaque').css('background-image',img);
+        });
+        
+        $('.mini-img-wraper').eq(0).click();
+    };
+
+    // CLICAR NO MENU EM CONTATO E IR PARA O FORMULARIO DE CONTATO NA MESMA PAGE
+
+    /*var diretory ='/Curso de WebMaster/PROJETO 05/'
+
+
+    $('[goto=contato]').click(function(){
+        location.href=diretory+'index.html?contato';
+        return false;
+    })
+
+    checkUrl();
+
+    function checkUrl(){
+        var url = location.href.split('/');
+        var curPage = url[url.length-1].split('?');
+
+        if(curPage[1] != undefined && curPage[1] == 'contato'){
+        $('nav a').css('colo','black');
+        $('footer nav a').css('color','white');
+        $(this).css('color','#EB2D2D');
+        $('html,body').animate({'scrollTop':$('#contato').offset().top});
+        }
+    }*/
+
+    $('[goto=contato]').click(function(){
+        $('nav a').css('colo','black');
+        $('footer nav a').css('color','white');
+        $(this).css('color','#EB2D2D');
+        $('html,body').animate({'scrollTop':$('#contato').offset().top});
+        return false;
+    })
+
+    // DEPOIMENTOS PAGE INDEX
+
+    var amtDepoimento = $('.depoi-2').length;
+    var indexDepoi = 0;
+
+    inicDepoi();
+    navDepoi();
+
+    function inicDepoi(){
+        $('.depoi-2').hide();
+        $('.depoi-2').eq(0).show();
+    }
+  
+    function navDepoi(){
+        $('[next]').click(function(){
+            indexDepoi++;
+            if(indexDepoi >= amtDepoimento)
+                indexDepoi = 0;
+            $('.depoi-2').hide();
+            $('.depoi-2').eq(indexDepoi).show();
+        });
+
+        $('[prev]').click(function(){
+            indexDepoi--;
+            if(indexDepoi < 0)
+            indexDepoi = amtDepoimento-1;
+            $('.depoi-2').hide();
+            $('.depoi-2').eq(indexDepoi).show();
+        })
+    }
+
+    
 
 });

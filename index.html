@@ -24,20 +24,20 @@
 			<p><a href="venda.html">Venda</a></p>
 			<p><a href="sobrenos.html">Sobre Nós</a></p>
 			<p><a href="evento.html">Eventos</a></p>
+			<p><a href="" goto="contato">Contato</a></p>
 		</nav><!--menu-desktop-->
-
-		<div class="mobile">
-
-		<img src="imagens/icon_menu.png">
-
-		<div class="mobile2">
-			<nav >
-				<p><a href="evento.html">Eventos</a></p>
-				<p><a href="sobrenos.html">Sobre Nós</a></p>
+	
+		<nav class="mobile">
+			<ul>
+				<p><a style="color: black;" href="index.html">Home</a></p>
 				<p><a href="venda.html">Venda</a></p>		
-				<p><a style="color: #EB2D2D;" href="home.html">Home</a></p>			
-			</nav>
-		</div><!--mobile-->
+				<p><a href="sobrenos.html">Sobre Nós</a></p>
+				<p><a href="evento.html">Eventos</a></p>				
+				<p><a href="" goto="contato"></a></p>
+
+			</ul>
+		</nav><!--mobile-->
+		
 
 	</div><!--container-->
 
@@ -78,7 +78,7 @@
 					<p>1.6 8v, Gasolina, 2p Manual 1969</p>
 				</div><!--galeria-texto-->
 
-				<input type="submit" name="" value="Mais Detalhes">
+				<a href="veiculo-teste.html"><input type="submit" name="" value="Mais Detalhes"></a>
 			</div><!--galeria-single-->
 
 			<div class="galeria-single">
@@ -89,7 +89,7 @@
 					<p>4cc, Bancos de Corvin, 2,5 1980</p>
 				</div><!--galeria-texto-->
 
-				<input type="submit" name="" value="Mais Detalhes">
+				<a href="veiculo-teste.html"><input type="submit" name="" value="Mais Detalhes"></a>
 			</div><!--galeria-single-->
 
 			<div class="galeria-single">
@@ -100,7 +100,7 @@
 					<p>Turbo forjado, xenon e alturas legalizadas, 1991	</p>
 				</div><!--galeria-texto-->
 
-				<input type="submit" name="" value="Mais Detalhes">
+				<a href="veiculo-teste.html"><input type="submit" name="" value="Mais Detalhes"></a>
 			</div><!--galeria-single-->
 
 		</div><!--galeria-->
@@ -110,9 +110,9 @@
 </section><!--destaque-->
 
 <section class="services-depoi">
-	<div class="container">
-		<div class="servicos">
-			<div class="servicos-2">
+	<div class="container" id="slideSerDep">
+		<div class="servicos" id="serv_depoi">
+			<div class="servicos-2" >
 				<h2>serviços</h2>
 				<nav>
 					<li>Compra</li>
@@ -123,20 +123,42 @@
 				</nav>
 			</div><!--servicos-2-->
 			<div class="servicos-3">
-				<input type="submit" name="" value="Saiba mais">
+				<a href="sobrenos.html"><input type="submit" name="" value="Saiba mais"></a>
 			</div><!--servicos-3-->
 		</div><!--servicos-->
 
-		<div class="depoi">
-			<div class="depoi-2">
-				<h2>depoimentos</h2>
-				<p>"O Rafael foi muito atencioso, me buscou no aeroporto e garantiu toda comodidade e conforto no almoço, no transfer, na visita ao veículo e durante o test-drive"</p>
-			</div><!--depoi-2-->
-			<div class="depoi-3">
-				<img src="imagens/arrow-left.png">
-				<img src="imagens/arrow-right.png">
-				<p>Gustavo Teixeira - Colecionador</p>
-			</div><!--depoi-3-->
+		<div class="depoi" id="serv_depoi">
+			<div class="depoi-scroll">
+				<div  class="depoi-wraper">
+					<div class="depoi-2">
+						<h2>depoimentos</h2>
+						<p>"O Rafael foi muito atencioso, me buscou no aeroporto e garantiu toda comodidade e conforto no almoço, no transfer, na visita ao veículo e durante o test-drive"</p>
+						<p>Gustavo Teixeira - Colecionador</p>
+					</div><!--depoi-2-->
+
+					<div class="depoi-2">
+						<h2>depoimentos 2 </h2>
+						<p>"O Rafael foi muito atencioso, me buscou no aeroporto e garantiu toda comodidade e conforto no almoço, no transfer, na visita ao veículo e durante o test-drive"</p>
+						<p>Gustavo Teixeira - Colecionador</p>
+					</div><!--depoi-2-->
+
+					<div class="depoi-2">
+						<h2>depoimentos 3 </h2>
+						<p>"O Rafael foi muito atencioso, me buscou no aeroporto e garantiu toda comodidade e conforto no almoço, no transfer, na visita ao veículo e durante o test-drive"</p>
+						<p>Gustavo Teixeira - Colecionador</p>
+					</div><!--depoi-2-->
+
+					
+				</div><!--depoi-wraper-->
+			</div><!--depoi-scroll-->
+
+			<div class="depoi-slide-bullets">
+				<img src="imagens/arrow-left.png" prev>
+				<img src="imagens/arrow-right.png" next>
+				
+				
+			</div><!--depoi-slide-bullets-->
+
 		</div><!--depoi-->
 
 
@@ -145,7 +167,7 @@
 	
 </section><!--services-depoi-->
 
-<section class="contato">
+<section class="contato" id="contato">
 
 	<div class="contato2">
 			<div class="line-contato"></div>
@@ -174,6 +196,7 @@
 <footer>
 	<div class="menu-inferior">
 		<nav >
+			<p><a href="index.html?contato" goto="contato">Contato</a></p>
 			<p><a href="evento.html">Eventos</a></p>
 			<p><a href="sobrenos.html">Sobre Nós</a></p>
 			<p><a href="venda.html">Venda</a></p>		
