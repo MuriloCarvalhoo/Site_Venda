@@ -21,11 +21,19 @@ html,body{
 }
 
 /* PAGINA PRINCIPAL*/
-header.container img{
+
+header .container .logo{
 	float: left;
+	cursor: pointer;
 }
 
-header .line-header{
+
+header.container img{
+}
+
+
+
+.line-header{
 	position: relative;
 	width: 100%;
 	height: 3px;
