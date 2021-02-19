@@ -159,7 +159,7 @@ $(function(){
     $('[goto=contato]').click(function(){
         $('nav a').css('colo','black');
         $('footer nav a').css('color','white');
-        $(this).css('color','#EB2D2D');
+        $(this).css('color','black');
         $('html,body').animate({'scrollTop':$('#contato').offset().top});
         return false;
     })
@@ -194,6 +194,25 @@ $(function(){
             $('.depoi-2').eq(indexDepoi).show();
         })
     }
+
+    $('.galeria').slick({
+        slidesToShow: 3,
+        centerMode: false,
+         infinite: false,
+         arrows: false,
+        responsive: [
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    arrows: false
+                    }        
+            }
+        ]
+    });
 
     
 

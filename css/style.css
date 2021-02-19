@@ -27,14 +27,7 @@ header .container .logo{
 	cursor: pointer;
 }
 
-
-header.container img{
-}
-
-
-
 .line-header{
-	position: relative;
 	width: 100%;
 	height: 3px;
 	top: 20px;
@@ -181,12 +174,14 @@ section.destaque .destaque2 h2{
 .galeria .galeria-single img{
 	width: 280px;
 	height: 215px;
-	border: 5px solid white;
+	margin: 10px auto;
 }
 
 .galeria .galeria-single .galeria-texto{
 	padding-top: 15px;
 	padding-bottom: 10px;
+	text-align: center;
+
 
 }
 
@@ -200,6 +195,11 @@ section.destaque .destaque2 h2{
 	padding: 5px 0;
 }
 
+.galeria .galeria-single .maisdetalhes{
+	margin: 0 auto;
+	text-align: center;
+}
+
 .galeria .galeria-single input{
 	text-decoration: none;
 	color: white;
@@ -209,6 +209,7 @@ section.destaque .destaque2 h2{
 	height: 49px;
 	cursor: pointer;
 	padding: 5px 0;
+	text-align: center;
 }
 
 section.services-depoi .servicos{
@@ -224,11 +225,13 @@ section.services-depoi .servicos{
 section.services-depoi .servicos .servicos-2{
 	float: left;
 	padding: 0 5%;
-	display: inline-block;
 }
+
 section.services-depoi .servicos .servicos-3{
-	float: right;
-	padding: 10px 20px;
+	width: 100%;
+	float: left;
+	padding-top: 30px;
+	padding-left: 50px;
 }
 
 section.services-depoi .servicos h2{
@@ -734,6 +737,16 @@ section.eventos .evento1 p{
 	font-weight: bold;
 }
 
+	@media screen and (max-width: 1024px){
+		section.services-depoi .servicos{
+			width: 100%;
+		}
+
+		section.services-depoi .depoi{
+			width: 100%;
+		}
+	}
+
 	@media screen and (max-width: 900px) {
 		section.Banner {
 			background-size: cover;
@@ -892,7 +905,11 @@ section.eventos .evento1 p{
 
 		.mobile{
 			display: block;
-		}		
+		}
+		
+		.mobile ul{
+			height: auto;
+		}
 
 		.texto-banner-single:nth-of-type(1){
 
@@ -936,6 +953,15 @@ section.eventos .evento1 p{
 			display: none;
 		}
 
+		section.services-depoi .servicos{
+			height: 300px;
+		}
+
+		section.services-depoi .servicos .servicos-2{
+			padding-top: 10px;
+			padding-left: 50px;
+		}
+
 		section.services-depoi .servicos h2{
 			font-size: 24px;
 
@@ -948,6 +974,10 @@ section.eventos .evento1 p{
 		section.services-depoi .servicos input{
 			width: 100px;
 			height: 49px;
+		}
+
+		section.services-depoi .depoi{
+			height: 300px;
 		}
 
 		section.services-depoi .depoi h2{
@@ -963,6 +993,12 @@ section.eventos .evento1 p{
 			width: 100%;
 		}
 
+	}
+
+	@media screen and (max-width: 553px){
+		.mobile ul{
+			left: 80%;
+		}
 	}
 
 
